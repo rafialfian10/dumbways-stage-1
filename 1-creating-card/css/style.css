@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eee;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: rgb(255, 75, 75);
+    display: flex;
+    margin: -80px auto;
+}
+
+.navbar ul {
+    margin-left: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.navbar ul li img {
+    margin: auto;
+    width: 45px;
+    height: 30px;
+}
+
+.navbar ul li a {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li.liContact {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar a.aContact {
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    margin-right: 10px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 30px;
+}
+/* ---------------------------------------- */
+
+/* Content */
+.content-container {
+    width: 90%;
+    margin: 80px auto;
+    display: flex; 
+    justify-content: space-between;
+    background-color: white; 
+    padding: 20px 30px;
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5)
+}
+
+.content {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+p {
+    line-height: 25px;
+    margin-bottom: 25px;
+    text-align: justify; 
+}
+
+.biodata .btn-contact {
+    width: 100px; 
+    border-radius: 20px; 
+    background-color: black; 
+    padding: 5px; box-sizing: border-box;  
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.biodata .btn-contact a {
+    text-decoration: none;
+    letter-spacing: 0.5;
+    font-size: 15px;
+    color: white;
+}
+
+.biodata .downloadCv {
+    text-decoration: none;
+    color: black;
+}
+
+.biodata button:hover, .biodata a:hover, .liContact a:hover {
+    opacity: 0.8;
+}
+
+.content .downloadCv img {
+    width: 13px; 
+    height: 13px; 
+    margin-left: 7px;
+}
+
+.content .icon {
+    width: 100%;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content .icon img {
+    margin-right: 15px; 
+    width: 30px; 
+    height: 30px; 
+}
+
+.icon img:hover {
+    transform: scale(1.2) rotate(360deg);
+    transition: 0.5s all;
+    opacity: 0.7;
+}
+
+.card {
+    width: 30%; 
+    /* margin: 0px auto; */
+    border-radius: 5px; 
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .6); 
+    overflow: hidden;
+    transition: 0.5s all;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card img:hover {
+    cursor: pointer;
+    filter: hue-rotate(150deg);
+}
+
+.card-content {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 2px 2px rgba(254, 0, 0, 0.5),
+                -2px -2px 2px 2px rgba(254, 0, 0, 0.5),
+                4px 4px 4px 4px rgba(255, 75, 75, 0.5),
+                -4px -4px 4px 4px rgba(255, 75, 75, 0.5),
+                6px 6px 6px 6px rgba(239, 113, 113, 0.5),
+                -6px -6px 6px 6px rgba(239, 113, 113, 0.5);
+}
+
+
