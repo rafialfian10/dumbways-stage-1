@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-item a.active {
+    color: orangered !important;
+}
+
+.btn-danger {
+    background-color: orangered;
+}
+
+.card-text {
+    font-size: 0.8rem !important;
+    text-align: justify !important;
+}
+
+.cards {
+    width: 100vw !important;
+    margin: 0px !important;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse !important;
+    }
+
+    .card {
+        margin: auto;
+        width: 100vw !important;
+    }
+}
